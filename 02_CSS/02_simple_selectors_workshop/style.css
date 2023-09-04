@@ -1,11 +1,12 @@
-#h2-id {
+#container {
+	background-color: gray;
+}
+
+.red,
+span {
 	color: red;
 }
 
-.h2-class {
+a {
 	color: green;
-}
-
-h2 {
-	color: blue;
 }
