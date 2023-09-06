@@ -1,0 +1,18 @@
+/* style.css for folder 04 */
+
+/* Styling for the h1 element */
+h1 {
+	color: blue;
+	font-size: 24px;
+	text-align: center;
+}
+
+/* Styling for the p element */
+p {
+	font-size: 16px;
+}
+
+/* Red color class */
+.red {
+	color: red;
+}

@@ -1,0 +1,37 @@
+/* Styling for the h1 element */
+h1 {
+	color: blue;
+	font-size: 24px;
+	text-align: center;
+}
+
+/* Styling for the p element */
+p {
+	color: red;
+	font-size: 16px;
+	font-style: italic;
+}
+
+/* Styling for the ul and li elements */
+ul {
+	list-style-type: circle;
+}
+
+li {
+	color: green;
+}
+
+/* Styling for the input element */
+input[type='text'] {
+	padding: 5px;
+	border: 1px solid #ccc;
+}
+
+/* Styling for the button element */
+button {
+	background-color: orange;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+}

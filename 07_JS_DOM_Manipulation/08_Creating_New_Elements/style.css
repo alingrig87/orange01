@@ -1,0 +1,15 @@
+/* Styling for h1 */
+h1 {
+	color: blue;
+	font-size: 24px;
+	text-align: center;
+}
+
+/* Styling for container */
+#myContainer {
+	width: 300px;
+	height: 200px;
+	background-color: lightgray;
+	margin: 0 auto;
+	padding: 20px;
+}

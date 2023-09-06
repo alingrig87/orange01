@@ -1,0 +1,26 @@
+/* Styling for the h1 element */
+h1 {
+	color: blue;
+	font-size: 24px;
+	text-align: center;
+}
+
+/* Styling for the input element */
+input {
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+/* Styling for the p element */
+p {
+	font-size: 16px;
+	cursor: pointer;
+}
+
+/* Styling for the div element */
+div {
+	width: 200px;
+	height: 200px;
+	background-color: lightgray;
+	cursor: pointer;
+}

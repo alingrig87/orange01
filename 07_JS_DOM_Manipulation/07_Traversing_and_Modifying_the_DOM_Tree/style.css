@@ -1,0 +1,28 @@
+/* Styling for the h1 element */
+h1 {
+	color: blue;
+	font-size: 24px;
+	text-align: center;
+}
+
+/* Styling for the unordered list (ul) element */
+ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+/* Styling for the list items (li) */
+li {
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+
+/* Styling for the button element */
+button {
+	margin-top: 10px;
+}
+
+/* Styling for the highlighted item */
+.highlight {
+	background-color: yellow;
+}

@@ -1,0 +1,23 @@
+/* Styling for h1 */
+h1 {
+	color: blue;
+	font-size: 24px;
+	text-align: center;
+}
+
+/* Styling for input and output containers */
+.input-container,
+.output-container {
+	margin-bottom: 10px;
+}
+
+/* Styling for labels */
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+/* Styling for buttons */
+button {
+	margin-right: 5px;
+}
