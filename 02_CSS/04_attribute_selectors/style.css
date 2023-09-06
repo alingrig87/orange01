@@ -1,0 +1,23 @@
+[target] {
+	color: red;
+}
+
+[target='_blank'] {
+	color: violet;
+}
+
+[class~='box'] {
+	color: brown;
+}
+
+[class|='first'] {
+	color: red;
+}
+
+[href^='https'] {
+	color: blueviolet;
+}
+
+[href$='.ro'] {
+	color: darkblue;
+}

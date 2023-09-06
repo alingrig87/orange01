@@ -1,15 +1,11 @@
-div p {
-	color: green;
-}
-
-div > p {
+p > a {
 	color: red;
 }
 
-p + h6 {
-	background-color: aquamarine;
+p + a {
+	color: green;
 }
 
-h6 ~ p {
-	color: violet;
+div + p > span {
+	color: pink;
 }
