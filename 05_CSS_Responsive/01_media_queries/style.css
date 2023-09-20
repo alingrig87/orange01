@@ -1,0 +1,51 @@
+body {
+	font-family: verdana;
+	background: bisque;
+	text-align: center;
+	padding-top: 200px;
+}
+
+h1 {
+	display: none;
+}
+
+/* widescreen */
+@media (min-width: 1201px) {
+	body {
+		background-color: blueviolet;
+	}
+
+	#widescreen h1 {
+		display: block;
+	}
+}
+
+/* laptop */
+@media (min-width: 801px) and (max-width: 1200px) {
+	body {
+		background-color: chocolate;
+	}
+	#laptop h1 {
+		display: block;
+	}
+}
+
+/* tablet */
+@media (min-width: 501px) and (max-width: 800px) {
+	body {
+		background-color: darkcyan;
+	}
+	#tablet h1 {
+		display: block;
+	}
+}
+
+/* smartphone */
+@media (max-width: 500px) {
+	body {
+		background-color: gold;
+	}
+	#smartphone h1 {
+		display: block;
+	}
+}
