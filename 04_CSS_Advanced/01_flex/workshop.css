@@ -1,0 +1,92 @@
+/* 
+		<div id="container">
+			<div id="navbar">Navbar</div>
+			<div id="main-content">
+				<div id="sidebar">Sidebar</div>
+				<div id="content">
+					<div id="main">Maine</div>
+					<div id="sections">
+						<div id="section1">Section1</div>
+						<div id="section2">Section2</div>
+						<div id="section3">Section3</div>
+					</div>
+				</div>
+			</div>
+			<div id="footer">Footer</div> */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	display: flex;
+	gap: 5px;
+	flex-direction: column;
+	height: 100vh;
+}
+
+#main-content {
+	display: flex;
+	gap: 5px;
+	/* height: 90vh; */
+	flex: 18;
+}
+
+#sidebar {
+	background-color: bisque;
+	/* width: 20vw; */
+	flex: 1;
+}
+
+#content {
+	display: flex;
+	gap: 5px;
+	flex-direction: column;
+	/* width: 80vw; */
+	flex: 2;
+}
+
+#sections {
+	display: flex;
+	gap: 5px;
+	/* width: 80vw; */
+	/* height: 63vh; */
+	flex: 7;
+}
+
+#section1 {
+	background-color: orange;
+	/* width: 40vw; */
+	flex: 2;
+}
+
+#section2 {
+	background-color: green;
+	/* width: 20vw; */
+	flex: 1;
+}
+
+#section3 {
+	background-color: gray;
+	/* width: 20vw; */
+	flex: 1;
+}
+
+#main {
+	background-color: salmon;
+	flex: 3;
+	/* height: 27vh; */
+}
+
+#navbar {
+	background-color: burlywood;
+	/* height: 5vh; */
+	flex: 1;
+}
+
+#footer {
+	background-color: rgb(111, 186, 233);
+	/* height: 5vh; */
+	flex: 1;
+}
