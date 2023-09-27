@@ -1,0 +1,22 @@
+body {
+	display: flex;
+	justify-content: center;
+	padding-top: 100px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	background-color: rgb(50, 198, 239);
+	padding: 10px;
+	border: 1px solid gray;
+	border-radius: 10px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.timp,
+.distanta {
+	display: flex;
+	justify-content: space-between;
+}
