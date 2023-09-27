@@ -1,0 +1,24 @@
+.box i {
+	font-size: 150px;
+	color: rgb(57, 142, 239);
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.fa-gear {
+	animation: rotation 2s cubic-bezier(1, 1, 1, 1);
+	/* animation-iteration-count: infinite; */
+}
+
+.box1 {
+	background-color: black;
+	height: 100px;
+	width: 100px;
+}
