@@ -8,3 +8,26 @@
 //    se citesc -30 si 3, se afiseaza “Distanta parcursa si durata trebuie sa fie pozitive”
 //    se citesc 30 si -3, se afiseaza “Distanta parcursa si durata trebuie sa fie pozitive”
 //    se citesc -30 si -3, se afiseaza “Distanta parcursa si durata trebuie sa fie pozitive”
+var outputParagraph = document.getElementById('output');
+var distantaInput = document.getElementById('distanta');
+var timpInput = document.getElementById('timp');
+
+function calculeazaVitezaMedie() {
+	var distanta = Number(distantaInput.value);
+	var timp = Number(timpInput.value);
+	var vitezaMedie = 0;
+
+	if (isNaN(distanta) || isNaN(timp)) {
+		outputParagraph.innerHTML =
+			'Distanta si timpul trebuie sa fie obligatoriu numere!';
+	} else if (timp === 0) {
+		outputParagraph.innerHTML = 'Felicitari, ai invetat teleportarea!';
+	} else if (distanta < 0 || timp < 0) {
+		outputParagraph.innerHTML =
+			'Distanta parcursa si durata trebuie sa fie pozitive';
+	} else {
+		vitezaMedie = distanta / timp;
+		outputParagraph.innerHTML =
+			'Viteza medie a fost ' + vitezaMedie.toFixed(2) + ' km/ora';
+	}
+}
