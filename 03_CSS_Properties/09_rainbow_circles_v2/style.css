@@ -1,0 +1,35 @@
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 500px;
+}
+
+[class^='circle'] {
+	border-radius: 50%;
+	padding: 40px;
+}
+
+.circle1 {
+	background-color: red;
+}
+
+.circle2 {
+	background-color: blue;
+}
+
+.circle3 {
+	background-color: green;
+}
+
+.circle4 {
+	background-color: rgb(214, 112, 34);
+}
+
+.circle5 {
+	background-color: rgb(177, 14, 95);
+}
+
+.circle6 {
+	background-color: rgb(8, 22, 8);
+}

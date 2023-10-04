@@ -14,7 +14,7 @@
 
 .fa-gear {
 	animation: rotation 2s cubic-bezier(1, 1, 1, 1);
-	/* animation-iteration-count: infinite; */
+	animation-iteration-count: infinite;
 }
 
 .box1 {

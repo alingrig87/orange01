@@ -1,0 +1,19 @@
+#background {
+	height: 200px;
+	width: 200px;
+	background: url('https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcQ5pAUkFjASncLgVEsqVbwyTj0LP1ObO85jakWZEibYYmjHzzQux9-C1zQ2DXiZnAldF_l5_EXyZXQqQf4');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#gradient {
+	height: 200px;
+	width: 200px;
+	background: linear-gradient(to right, blue, yellow, red);
+}
+#png {
+	height: 200px;
+	width: 200px;
+	background-image: url(https://png.pngtree.com/png-vector/20220926/ourmid/pngtree-shiny-gold-star-clipart-illustration-design-png-image_6216956.png),
+		url(https://c4.wallpaperflare.com/wallpaper/108/140/869/digital-digital-art-artwork-fantasy-art-drawing-hd-wallpaper-thumb.jpg);
+	background-size: cover;
+}

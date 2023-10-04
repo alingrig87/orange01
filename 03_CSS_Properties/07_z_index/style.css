@@ -1,0 +1,27 @@
+div {
+	height: 100px;
+	width: 100px;
+}
+
+#box1 {
+	background-color: red;
+	position: relative;
+	z-index: 11;
+}
+
+#box2 {
+	background-color: blue;
+	position: relative;
+	height: 50px;
+	width: 50px;
+	top: -25px;
+	left: 25px;
+	z-index: 10;
+}
+
+#box3 {
+	background-color: green;
+	position: relative;
+	top: -120px;
+	z-index: 7;
+}
