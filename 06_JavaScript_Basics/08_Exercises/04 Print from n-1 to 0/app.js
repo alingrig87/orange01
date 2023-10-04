@@ -1,22 +1,23 @@
 var numberInput = document.getElementById('number');
 var outputParagraph = document.getElementById('output');
 
-function printFrom1ToN() {
+function printFromNminus1To0() {
 	outputParagraph.innerHTML = '';
-	var i = 1;
+	var n = Number(numberInput.value);
+	var i = n - 1;
 
-	while (i <= n) {
+	while (i >= 0) {
 		console.log(i);
 		outputParagraph.innerHTML = outputParagraph.innerHTML + ' ' + i;
-		i = i + 1;
+		i = i - 1;
 	}
 }
 
-function printFrom1ToNUsingFor() {
+function printFromNminus1To0UsingFor() {
 	outputParagraph.innerHTML = 'Using for';
 	var n = Number(numberInput.value);
 
-	for (var i = 1; i <= n; i = i + 1) {
+	for (var i = n - 1; i >= 0; i = i - 1) {
 		console.log(i);
 		outputParagraph.innerHTML = outputParagraph.innerHTML + ' ' + i;
 	}
