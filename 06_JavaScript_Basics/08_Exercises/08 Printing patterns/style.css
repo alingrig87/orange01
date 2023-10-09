@@ -1,0 +1,36 @@
+body {
+	justify-content: center;
+	padding-top: 100px;
+}
+
+.container {
+	width: 800px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	background-color: rgb(44, 157, 6);
+	padding: 10px;
+	border: 1px solid gray;
+	border-radius: 10px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.circle {
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	margin: 10px;
+	border-radius: 50%;
+}
+
+.orange {
+	background-color: rgb(233, 140, 74);
+}
+
+.red {
+	background-color: red;
+}
+
+.transparent {
+	background-color: transparent;
+}
