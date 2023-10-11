@@ -20,7 +20,7 @@ p {
 /* Styling for the div element */
 div {
 	width: 200px;
-	height: 200px;
+	height: 800px;
 	background-color: lightgray;
 	cursor: pointer;
 }

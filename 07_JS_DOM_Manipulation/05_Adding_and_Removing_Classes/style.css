@@ -11,7 +11,17 @@ p {
 }
 
 /* Custom class for adding styles */
-.custom-class {
-	background-color: yellow;
+.blue {
+	background-color: blue;
+	font-weight: bold;
+}
+
+.green {
+	background-color: green;
+	font-weight: bold;
+}
+
+.red {
+	background-color: red;
 	font-weight: bold;
 }
