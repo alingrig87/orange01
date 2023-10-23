@@ -21,3 +21,7 @@ li {
 button {
 	margin-top: 10px;
 }
+
+.viewed {
+	text-decoration: line-through;
+}
