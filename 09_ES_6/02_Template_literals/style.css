@@ -17,6 +17,7 @@
 	width: 200px;
 }
 
-.card p {
+.card p,
+.card h2 {
 	text-align: center;
 }
