@@ -1,8 +1,8 @@
-#students {
+#products {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 }
 
-#students img {
+#products img {
 	width: 100px;
 }
