@@ -1,56 +1,36 @@
-let seconds = 58;
 let minutes = 0;
+let seconds = 55;
 let timerId;
 
-const startButton = document.querySelector('#start');
-startButton.addEventListener('click', startTimer);
+const startBtn = document.getElementById('start');
+startBtn.addEventListener('click', startTimer);
 
 function startTimer() {
 	timerId = setInterval(() => {
-		showSeconds(seconds);
-		showMinutes(minutes);
-		seconds++;
-		if (seconds == 60) {
-			seconds = 0;
-			minutes++;
-		}
+		updateSeconds();
+		updateMinutes();
 	}, 1000);
-	console.log(timerId);
 }
 
-function showSeconds(value) {
-	const secondsSpan = document.querySelector('#seconds-span');
-	if (value < 10) {
-		value = '0' + value;
+function updateSeconds() {
+	seconds++;
+
+	document.getElementById('seconds-span').innerHTML =
+		seconds < 10 ? '0' + seconds : seconds == 60 ? '00' : '' + seconds;
+}
+
+function updateMinutes() {
+	if (seconds === 60) {
+		seconds = 0;
+		minutes++;
 	}
-	secondsSpan.innerHTML = value;
+	document.getElementById('minutes-span').innerHTML =
+		minutes < 10 ? '0' + minutes : '' + minutes;
 }
 
-function showMinutes(value) {
-	const minutesSpan = document.querySelector('#minutes-span');
-	if (value < 10) {
-		value = '0' + value;
-	}
-	minutesSpan.innerHTML = value;
-}
-
-const stopButton = document.querySelector('#stop');
-stopButton.addEventListener('click', stopTimer);
+const stop = document.getElementById('stop');
+stop.addEventListener('click', stopTimer);
 
 function stopTimer() {
 	clearInterval(timerId);
-}
-
-const resetButton = document.querySelector('#reset');
-resetButton.addEventListener('click', resetTimer);
-
-function resetTimer() {
-	seconds = 0;
-	minutes = 0;
-	const secondsSpan = document.querySelector('#seconds-span');
-	const minutesSpan = document.querySelector('#minutes-span');
-	secondsSpan.innerHTML = '00';
-	minutesSpan.innerHTML = '00';
-	clearInterval(timerId);
-	startTimer();
 }

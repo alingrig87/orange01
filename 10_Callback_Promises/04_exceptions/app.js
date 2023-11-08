@@ -1,35 +1,19 @@
-// https://api.github.com/users
+const promise = new Promise((resolve, reject) => {
+	setTimeout(() => {
+		const randomNumber = Math.random();
+		if (randomNumber > 0.5) {
+			resolve(randomNumber);
+		} else {
+			reject('Eroare: mai incearca!');
+		}
+	}, 2000);
+});
 
-window.addEventListener('DOMContentLoaded', showUsersOnPage);
-
-function showUsersOnPage() {
-	const url = 'https://api.github.com/users';
-	const container = document.getElementById('container');
-
+async function test() {
 	try {
-		throw new Error('A aparut o eroare!');
+		const result = await promise();
+		console.log(result);
 	} catch (error) {
-		console.log(error);
+		console.log('EROARE: ' + error);
 	}
-
-	fetch(url)
-		.then((response) => response.json())
-		.then((users) => {
-			const usersInnerHtml = users
-				.map(
-					(user) =>
-						`
-	         <div>
-	            <img width="50px" src=${user.avatar_url} />
-	            <br/>
-	            <span>${user.login}</span>
-	         </div>
-	      `
-				)
-				.join('');
-			container.innerHTML = usersInnerHtml;
-			container.style.display = 'grid';
-			container.style.gridTemplateColumns = '1fr 1fr 1fr 1fr';
-		})
-		.catch((error) => console.log(error));
 }
